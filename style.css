@@ -1,0 +1,33 @@
+@keyframes bounce {
+  0%,
+20%,
+50%,
+80%,
+100% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bg-random, .bounce {
+  background-color: #533980;
+}
+
+.bounce {
+  height: 333px;
+  width: 333px;
+  animation: bounce 1s ease infinite;
+  border-radius: 50%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
